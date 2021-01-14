@@ -11,10 +11,11 @@ import postsReducer from "./reducer"
 
 const store = createStore(
     postsReducer,
-    applyMiddleware(thunk)
+    // applyMidleware
 )
 ReactDOM.render(
     <Provider store={store}>
         <App />
     </Provider>
+
     , document.getElementById('root'))
