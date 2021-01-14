@@ -6,7 +6,7 @@ export const fetchPosts = () => {
             dispatch({
                 type: "START",
             })
-            const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+            const response = await axios.get("https://jssonplaceholder.typicode.com/posts")
             dispatch({
                 type: "SUCCESS",
                 payload: response.data
@@ -14,7 +14,6 @@ export const fetchPosts = () => {
         } catch (err) {
             dispatch({
                 type: "FAILURE",
-                payload: err
             })
         }
 
